@@ -3,8 +3,8 @@ import { useTheme } from "../context/ThemeProvider ";
 
 const ExperienceCard = ({ experience }) => {
   const { isDarkMode } = useTheme();
-  const bgColor = !isDarkMode ? "#1d5836" : "#1d1836";
-  const txtColor = !isDarkMode ? "#157836" : "#fff";
+  const bgColor = !isDarkMode ? "#0865a0" : "#1d1836";
+  const txtColor = !isDarkMode ? "#21130d" : "#fff";
 
   return (
     <VerticalTimelineElement

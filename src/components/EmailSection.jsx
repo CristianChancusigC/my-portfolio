@@ -89,7 +89,8 @@ function EmailSection() {
                 onChange={handleChange}
                 required
                 placeholder="What's your name?"
-                className="bg-[#18191E] border border-[#33353F] placeholder:-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="bg-[#ebe5e5] border border-[#9e9b9b] placeholder:-[#9CA2A9] text-gray-600 text-sm rounded-lg block w-full p-2.5
+                dark:bg-[#18191E] dark:border-[#33353F] dark:text-gray-100"
               />
             </label>
           </div>
@@ -103,7 +104,8 @@ function EmailSection() {
                 onChange={handleChange}
                 required
                 placeholder="What's your email?"
-                className="bg-[#18191E] border border-[#33353F] placeholder:-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="bg-[#ebe5e5] border border-[#9e9b9b] placeholder:-[#9CA2A9] text-gray-600 text-sm rounded-lg block w-full p-2.5
+                dark:bg-[#18191E] dark:border-[#33353F] dark:text-gray-100"
               />
             </label>
           </div>
@@ -114,7 +116,8 @@ function EmailSection() {
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                className="bg-[#18191E] border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                className="bg-[#ebe5e5] border border-[#9e9b9b] placeholder-[#9CA2A9] text-gray-600 text-sm rounded-lg block w-full p-2.5
+                dark:bg-[#18191E] dark:border-[#33353F] dark:text-gray-100"
                 placeholder="What do you want to say?"
               ></textarea>
             </label>
