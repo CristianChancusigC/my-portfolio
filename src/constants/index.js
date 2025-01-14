@@ -10,6 +10,7 @@ const unityIcon = "./images/unity-icon.svg";
 const sgnImg = "./images/projects/signbreak.png";
 const oznImg = "./images/projects/operazone.png";
 const portfolioImg = "./images/projects/portfolio-img.png";
+const appCellImg = "./images/projects/appCell.png";
 
 const navLinks = [
   {
@@ -84,7 +85,7 @@ const projectsData = [
     id: 2,
     title: "Get Data",
     description: "App for to get a information of signal",
-    imgUrl: portfolioImg,
+    imgUrl: appCellImg,
     gitUrl: "https://github.com/CristianChancusigC/Location.git",
     liveUrl: "",
     tag: ["All", "Mobile"],

@@ -9,7 +9,7 @@ function ProjectCard({ imgUrl, title, description, gitUrl, liveUrl }) {
       transition={{ duration: 0.3 }}
     >
       <div
-        className="h-52 md:h-72 rounded--t-xl relative group"
+        className="h-52 md:h-72 rounded-t-xl relative group"
         style={{
           backgroundImage: `url(${imgUrl})`,
           backgroundSize: "cover",

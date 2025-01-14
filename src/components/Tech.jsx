@@ -23,7 +23,7 @@ const Tech = () => (
     <div className=" flex flex-wrap justify-center gap-10 gap-y-6">
       {skilsTech.map((skil, i) => (
         <motion.div
-          className="w-28 h-28"
+          className="w-28 h-25"
           key={skil.name}
           initial={{ transform: "translateY(100px)" }}
           whileInView={{ transform: "translateY(0px)" }}
