@@ -20,7 +20,7 @@ const Tech = () => (
         Skills
       </motion.h2>
     </motion.div>
-    <div className=" flex flex-row flex-wrap justify-center gap-10">
+    <div className=" flex flex-wrap justify-center gap-10 gap-y-6">
       {skilsTech.map((skil, i) => (
         <motion.div
           className="w-28 h-28"

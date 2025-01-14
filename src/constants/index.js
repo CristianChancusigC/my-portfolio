@@ -54,7 +54,7 @@ const experiences = [
   },
   {
     title: "Software Developer",
-    company_name: "GXSeemon",
+    company_name: "NGXSeemon",
     icon: gitIcon,
     iconBg: "#383E56",
     date: " September 2022 - November 2024",
@@ -76,8 +76,8 @@ const projectsData = [
     title: "Portfolio",
     description: "This is my portfolio",
     imgUrl: portfolioImg,
-    gitUrl: "https://github.com/",
-    liveUrl: "https://www.deepl.com/en/translator",
+    gitUrl: "",
+    liveUrl: "https://cristianchancusigc.github.io/my-portfolio/",
     tag: ["All", "Web"],
   },
   {
