@@ -4,9 +4,11 @@ import ProjectTag from "./ProjectTag";
 import { projectsData } from "../constants";
 import { motion } from "motion/react";
 import { SectionWrapper } from "../hoc";
+import { useTranslation } from "react-i18next";
 
 function ProjectsSection() {
   const [selectedTag, setSelectedTag] = useState("All");
+  const { t } = useTranslation("global");
 
   const handleTagClick = (tag) => {
     setSelectedTag(tag);
@@ -24,7 +26,7 @@ function ProjectsSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.2 }}
       >
-        My Projects
+        {t("Projects.title")}
       </motion.h2>
       <div className="text-slate-700 dark:text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
@@ -54,8 +56,8 @@ function ProjectsSection() {
           >
             <ProjectCard
               key={project.id}
-              title={project.title}
-              description={project.description}
+              title={t(project.title)}
+              description={t(project.description)}
               imgUrl={project.imgUrl}
               gitUrl={project.gitUrl}
               liveUrl={project.liveUrl}

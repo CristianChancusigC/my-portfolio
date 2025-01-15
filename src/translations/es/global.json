@@ -1,0 +1,100 @@
+{
+  "NavBar": {
+    "aboutBtn": "Acerca",
+    "projectBtn": "Proyectos",
+    "contactBtn": "Contacto"
+  },
+  "Hero": {
+    "greeting": {
+      "p1": "Hola, Yo soy",
+      "p2": "Cristian!",
+      "p3": "Desarrollador"
+    },
+    "intro": "Desarrollador de software con experiencia en aplicaciones móviles y juegos educativos, especializado en Unity, C# y Python. Scrum Master certificado (2023) con experiencia en metodologías ágiles y colaboración en equipo. Premiado como 'Best Paper' en MEDES 2022 por sus contribuciones a la visión por computador y la automatización. Inglés (B2) y español fluidos, buscando crecer como programador backend o frontend en proyectos dinámicos e innovadores.",
+    "hire": "Contratame",
+    "download": "Descarga CV"
+  },
+  "About": {
+    "title": "Sobre mí",
+    "description": "Soy un desarrollador de software con experiencia en aplicaciones móviles y juegos educativos, centrado en soluciones de IA para crear herramientas innovadoras. Destaco por mi compromiso, ganas de aprender y adaptarme a nuevos retos. Con habilidades en programación, trabajo en equipo y metodologías ágiles como Scrum, me esfuerzo por superar las expectativas y contribuir al éxito de los proyectos en los que participo."
+  },
+  "Experience": {
+    "title": "Experiencia",
+    "exp1": {
+      "title": "Desarrollador de sistemas integrados",
+      "company_name": "Pinprexat",
+      "date": "Noviembre 2021 - Enero 2022",
+      "points": {
+        "p1": "Diseñar y desarrollar una interfaz hombre-máquina (IHM) para visualizar los valores de peso de las básculas.",
+        "p2": "Crear un programa capaz de leer datos de balanzas, gestionando las variaciones en el orden de los datos mediante la identificación dinámica y la extracción de la información relevante.",
+        "p3": "Recopilar y organizar los datos para un análisis exhaustivo de las mediciones de peso en todas las básculas."
+      }
+    },
+    "exp2": {
+      "title": "Desarrollador de software",
+      "company_name": "Freelancer",
+      "date": "Diciembre 2023 - Febrero 2024",
+      "points": {
+        "p1": "Desarrollar una aplicación de monitorización de red utilizando Kotlin, permitiendo la supervisión de señales en tiempo real.",
+        "p2": "Recopile y procese datos de señales en tiempo real para mejorar el análisis y la toma de decisiones.",
+        "p3": "Almacenar los datos recogidos en archivos planos, garantizando una recuperación eficaz para su posterior análisis.",
+        "p4": "Diseñar una interfaz intuitiva y fácil de usar para mejorar la usabilidad y mejorar la experiencia del usuario."
+      }
+    },
+    "exp3": {
+      "title": "Desarrollador de software",
+      "company_name": "NGXSeemon",
+      "date": "Septiembre 2022 - Noviembre 2024",
+      "points": {
+        "p1": "Diseñar y programar mecánicas para juegos móviles utilizando Unity y C#, incluyendo la optimización de los tiempos de desarrollo con Scriptable Objects, reduciendo el tiempo de creación de niveles de 4 horas a menos de 2 horas por nivel.",
+        "p2": "Desarrollar sistemas de interfaz de usuario con capacidad de respuesta y de cambio de idioma para aplicaciones móviles, al tiempo que se implementan funcionalidades clave como los sistemas de inicio de sesión con Google y PlayFab.",
+        "p3": "Configura y utiliza el SDK de PlayFab para integrar el almacenamiento en la nube, la gestión de cuentas y las compras in-app con Unity IAP, logrando una estrategia de monetización efectiva.",
+        "p4": "Implemente sistemas de guardado locales con archivos JSON serializados, garantizando tiempos de guardado inferiores a 1 segundo y mejorando la experiencia del usuario.",
+        "p5": "Resolver problemas de compatibilidad durante la compilación y distribución de aplicaciones en Google Play Store, garantizando la funcionalidad en dispositivos Android.",
+        "p6": "Utilice Git para el control de versiones y establezca flujos de trabajo organizados en GitHub con ramas dedicadas para el desarrollo, las pruebas y la producción, garantizando la estabilidad del código.",
+        "p7": "Trabajar bajo la metodología Scrum para fomentar la colaboración en equipo y optimizar el desarrollo de los proyectos."
+      }
+    }
+  },
+  "Skills": {
+    "title": "Habilidades"
+  },
+  "Projects": {
+    "title": "Mis proyectos",
+    "btn1": "Todos",
+    "btn2": "Web",
+    "btn3": "Móvil",
+    "prj1": {
+      "title": "Portfolio",
+      "description": "Este es mi portfolio",
+      "tag": {
+        "tag1": "All",
+        "tag2": "Web"
+      }
+    },
+    "prj2": {
+      "title": "Obtención de datos",
+      "description": "App para obtener información sobre la señal",
+      "tag": {
+        "tag1": "All",
+        "tag2": "Web"
+      }
+    }
+  },
+  "Contact": {
+    "txt1": "Trabajemos juntos",
+    "txt2": "Actualmente estoy buscando nuevas oportunidades",
+    "formTxt": {
+      "first": "Nombre",
+      "firstPlaceholder": "¿Cuál es tu nombre?",
+      "second": "Correo electrónico",
+      "secondPlaceholder": "¿Cuál es tu correo?",
+      "third": "Mensaje",
+      "thirdPlaceholder": "Mensaje",
+      "sendBtn": "Enviar",
+      "sendingBtn": "Enviando..."
+    },
+    "messageOk": "Muchas gracias. Me pondré en contacto con usted lo antes posible.",
+    "messageError": "Algo salió mal."
+  }
+}

@@ -1,16 +1,18 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import { useTheme } from "../context/ThemeProvider ";
+import { useTranslation } from "react-i18next";
 
 const ExperienceCard = ({ experience }) => {
   const { isDarkMode } = useTheme();
   const bgColor = !isDarkMode ? "#0865a0" : "#1d1836";
   const txtColor = !isDarkMode ? "#21130d" : "#fff";
+  const { t } = useTranslation("global");
 
   return (
     <VerticalTimelineElement
       contentStyle={{ background: bgColor, color: txtColor }}
       contentArrowStyle={{ borderRight: "7px solid #232631" }}
-      date={experience.date}
+      date={t(experience.date)}
       iconStyle={{ background: experience.iconBg }}
       // icon={
       //   <div className="flex justify-center items-center w-full h-full">
@@ -23,7 +25,9 @@ const ExperienceCard = ({ experience }) => {
       // }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+        <h3 className="text-white text-[24px] font-bold">
+          {t(experience.title)}
+        </h3>
         <p className="text-[16px] font-semibold" style={{ margin: 0 }}>
           {experience.company_name}
         </p>
@@ -34,7 +38,7 @@ const ExperienceCard = ({ experience }) => {
             key={`experiece-point-${index}`}
             className="text-white text-[14px] pl-1 tracking-wider"
           >
-            {point}
+            {t(point)}
           </li>
         ))}
       </ul>

@@ -15,58 +15,58 @@ const appCellImg = "./images/projects/appCell.png";
 const navLinks = [
   {
     id: "about",
-    title: "About",
+    titleKey: "NavBar.aboutBtn",
   },
   {
     id: "projects",
-    title: "Projects",
+    titleKey: "NavBar.projectBtn",
   },
   {
     id: "contact",
-    title: "Contact",
+    titleKey: "NavBar.contactBtn",
   },
 ];
 
 const experiences = [
   {
-    title: "Embedded Systems Developer",
+    title: "Experience.exp1.title",
     company_name: "Pinprexat",
     icon: gitIcon,
     iconBg: "#383E56",
-    date: "November 2021 - January 2022",
+    date: "Experience.exp1.date",
     points: [
-      "Design and develop a human-machine interface (HMI) to display weight values from scales.",
-      "Create a program capable of reading data from scales, managing variations in data order through dynamic identification and extraction of relevant information.",
-      "Collect and organize data for comprehensive analysis of weight measurements across scales.",
+      "Experience.exp1.points.p1",
+      "Experience.exp1.points.p2",
+      "Experience.exp1.points.p3",
     ],
   },
   {
-    title: "Software Developer",
+    title: "Experience.exp2.title",
     company_name: "Freelancer",
     icon: gitIcon,
     iconBg: "#E6DEDD",
-    date: "December 2023 - February 2024",
+    date: "Experience.exp2.date",
     points: [
-      "Develop a network monitoring application using Kotlin, enabling real-time signal supervision.",
-      "Collect and process real-time signal data for enhanced analysis and decision-making.",
-      "Store collected data in flat files, ensuring efficient retrieval for subsequent analysis.",
-      "Design an intuitive and user-friendly interface to improve usability and enhance user experience.",
+      "Experience.exp2.points.p1",
+      "Experience.exp2.points.p2",
+      "Experience.exp2.points.p3",
+      "Experience.exp2.points.p4",
     ],
   },
   {
-    title: "Software Developer",
+    title: "Experience.exp2.title",
     company_name: "NGXSeemon",
     icon: gitIcon,
     iconBg: "#383E56",
-    date: " September 2022 - November 2024",
+    date: "Experience.exp3.date",
     points: [
-      "Design and program mechanics for mobile games using Unity and C#, including optimizing development times with Scriptable Objects, reducing level creation time from 4 hours to less than 2 hours per level.",
-      "Develop responsive UI and language-switching systems for mobile applications, while implementing key functionalities such as login systems with Google and PlayFab.",
-      "Configure and use the PlayFab SDK to integrate cloud storage, account management, and in-app purchases with Unity IAP, achieving an effective monetization strategy.",
-      "Implement local save systems with serialized JSON files, ensuring sub-1-second save times and enhancing user experience.",
-      "Resolve compatibility issues during the compilation and distribution of applications on the Google Play Store, ensuring functionality on Android devices.",
-      "Use Git for version control and set up organized workflows on GitHub with dedicated branches for development, testing, and production, ensuring code stability.",
-      "Work under the Scrum methodology to promote team collaboration and optimize project development.",
+      "Experience.exp3.points.p1",
+      "Experience.exp3.points.p2",
+      "Experience.exp3.points.p3",
+      "Experience.exp3.points.p4",
+      "Experience.exp3.points.p5",
+      "Experience.exp3.points.p6",
+      "Experience.exp3.points.p7",
     ],
   },
 ];
@@ -74,8 +74,8 @@ const experiences = [
 const projectsData = [
   {
     id: 1,
-    title: "Portfolio",
-    description: "This is my portfolio",
+    title: "Projects.prj1.title",
+    description: "Projects.prj1.description",
     imgUrl: portfolioImg,
     gitUrl: "",
     liveUrl: "https://cristianchancusigc.github.io/my-portfolio/",
@@ -83,8 +83,8 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Get Data",
-    description: "App for to get a information of signal",
+    title: "Projects.prj2.title",
+    description: "Projects.prj2.description",
     imgUrl: appCellImg,
     gitUrl: "https://github.com/CristianChancusigC/Location.git",
     liveUrl: "",

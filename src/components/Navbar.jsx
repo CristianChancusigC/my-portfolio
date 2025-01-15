@@ -7,18 +7,25 @@ import {
   XMarkIcon,
   MoonIcon,
   SunIcon,
+  HomeIcon,
 } from "@heroicons/react/24/solid";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { useTheme } from "../context/ThemeProvider ";
+import { useTranslation } from "react-i18next";
+import i18n from "../i18n";
 
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [active, setActive] = useState("");
-  // const [isDarkMode, setDarkMode] = useState(true);
   const { isDarkMode, toggleDarkMode } = useTheme();
+  const [selectedLanguage, setSelectedLanguage] = useState("en");
+  const { t } = useTranslation("global");
 
-  // const toggleDarkMode = () => setDarkMode(!darkMode);
+  const handleChangeLanguage = (lng) => {
+    // console.log(lng.target.value);
+    setSelectedLanguage(lng.target.value);
+    i18n.changeLanguage(lng.target.value);
+  };
 
   useEffect(() => {
     if (isDarkMode) {
@@ -27,7 +34,6 @@ function Navbar() {
       document.querySelector("html").classList.remove("dark");
     }
   }, [isDarkMode]);
-  // const [scrolled, setScrolled] = useState(false);
 
   return (
     <nav
@@ -39,13 +45,25 @@ function Navbar() {
           to={"/"}
           className="flex items-center gap-2"
           onClick={() => {
-            setActive("");
+            // setActive("");
             window.scroll(0, 0);
           }}
         >
-          Home
+          <HomeIcon className="h-10 w-10" />
         </Link>
         <div className="sm:flex flex-row items-center gap-4">
+          <div className="md:w-auto">
+            <select
+              name="lngSelect"
+              id="lngSelect"
+              value={selectedLanguage}
+              onChange={handleChangeLanguage}
+              className="w-full bg-transparent placeholder:text-slate-300 text-slate-500 text-sm border border-slate-400 rounded pl-3 pr-8 py-2 transition duration-300 ease focus:outline-none focus:border-slate-200 hover:border-slate-200 shadow-sm focus:shadow-md appearance-none cursor-pointer"
+            >
+              <option value="en">En</option>
+              <option value="es">Es</option>
+            </select>
+          </div>
           <div className="md:w-auto">
             <button
               className="rounded-full border-2 bg-slate-600 dark:bg-[#121212] border-slate-200 p-2 hover:bg-slate-500 transition-all"
@@ -61,8 +79,8 @@ function Navbar() {
           <div className="md:w-auto" id="navbar">
             <ul className="list-none hidden sm:flex flex-row gap-10">
               {navLinks.map((link) => (
-                <li key={link.id} onClick={() => setActive(link.title)}>
-                  <NavLink to={`${link.id}`} title={link.title} />
+                <li key={link.id}>
+                  <NavLink to={`${link.id}`} title={t(link.titleKey)} />
                 </li>
               ))}
             </ul>

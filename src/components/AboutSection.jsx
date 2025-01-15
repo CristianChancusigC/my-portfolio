@@ -1,8 +1,11 @@
 import { motion } from "motion/react";
 import { SectionWrapper } from "../hoc";
+import { useTranslation } from "react-i18next";
 
 function AboutSection() {
   const MainIcon = "./images/about-img.jpg";
+  const { t } = useTranslation("global");
+
   return (
     <section className="text-slate-700 dark:text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
@@ -18,19 +21,14 @@ function AboutSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            About Me
+            {t("About.title")}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            I am a software developer with experience in mobile applications and
-            educational games, focused on AI solutions to create innovative
-            tools. I stand out commitment, willingness to learn and adapt to new
-            challenges. With skills in programming, teamwork and agile
-            methodologies such as Scrum, I strive to exceed expectations and
-            contribute to the success of the projects in which I participate.
+            {t("About.description")}
           </motion.p>
         </motion.div>
       </div>

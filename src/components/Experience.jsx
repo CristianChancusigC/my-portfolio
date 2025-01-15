@@ -5,10 +5,12 @@ import ExperienceCard from "./ExperienceCard";
 import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { useTheme } from "../context/ThemeProvider ";
+import { useTranslation } from "react-i18next";
 
 const Experience = () => {
   const { isDarkMode } = useTheme();
   const bordersColor = !isDarkMode ? "#456789" : "#fff";
+  const { t } = useTranslation("global");
 
   return (
     <div className={`${styles.paddingX}`}>
@@ -25,7 +27,7 @@ const Experience = () => {
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: true, amount: 0.25 }}
         >
-          Experience
+          {t("Experience.title")}
         </motion.h2>
       </motion.div>
       <div className="mt-20 flex flex-col">
