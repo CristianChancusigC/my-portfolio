@@ -4,13 +4,14 @@ import { useTranslation } from "react-i18next";
 
 const ExperienceCard = ({ experience }) => {
   const { isDarkMode } = useTheme();
-  const bgColor = !isDarkMode ? "#0865a0" : "#1d1836";
-  const txtColor = !isDarkMode ? "#21130d" : "#fff";
   const { t } = useTranslation("global");
 
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: bgColor, color: txtColor }}
+      contentStyle={{
+        background: `${!isDarkMode ? "#1F2937" : "#2E2E2E"}`,
+        color: `${!isDarkMode ? "#B0BEC5" : "#fff"}`,
+      }}
       contentArrowStyle={{ borderRight: "7px solid #232631" }}
       date={t(experience.date)}
       iconStyle={{ background: experience.iconBg }}
@@ -25,7 +26,7 @@ const ExperienceCard = ({ experience }) => {
       // }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">
+        <h3 className="text-card-titleTxt-light dark:text-card-titleTxt-dark text-[24px] font-bold">
           {t(experience.title)}
         </h3>
         <p className="text-[16px] font-semibold" style={{ margin: 0 }}>
@@ -36,7 +37,7 @@ const ExperienceCard = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experiece-point-${index}`}
-            className="text-white text-[14px] pl-1 tracking-wider"
+            className="text-card-descriptionTxt-light dark:text-card-descriptionTxt-dark text-[14px] pl-1 tracking-wider"
           >
             {t(point)}
           </li>

@@ -1,7 +1,7 @@
 function Footer(params) {
   return (
     <footer className="footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-slate-700 dark:text-white">
-      <div className="container p-12 flex justify-between">
+      <div className="container p-12 flex justify-between flex-wrap">
         <span>Cristian</span>
         <div>
           <p className="text-slate-500">cristianchancusigc@gmail.com.</p>

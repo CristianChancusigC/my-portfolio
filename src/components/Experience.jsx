@@ -21,7 +21,7 @@ const Experience = () => {
         viewport={{ once: true, amount: 0.25 }}
       >
         <motion.h2
-          className="text-center text-4xl font-bold text-slate-700 dark:text-white mt-4 mb-8 md:mb-12"
+          className="text-center text-4xl font-bold text-text-title-light dark:text-text-title-dark mt-4 mb-8 md:mb-12"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}

@@ -1,11 +1,14 @@
+import { useTranslation } from "react-i18next";
 import NavLink from "./NavLink";
 
 function MenuOverlay({ link }) {
+  const { t } = useTranslation("global");
+
   return (
-    <ul className="flex flex-col py-4 items-center">
+    <ul>
       <li key={link.title}>
         {link.map((link) => (
-          <NavLink key={link.id} to={`${link.id}`} title={link.title} />
+          <NavLink key={link.id} to={`${link.id}`} title={t(link.titleKey)} />
         ))}
       </li>
     </ul>

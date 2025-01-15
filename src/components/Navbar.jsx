@@ -22,7 +22,6 @@ function Navbar() {
   const { t } = useTranslation("global");
 
   const handleChangeLanguage = (lng) => {
-    // console.log(lng.target.value);
     setSelectedLanguage(lng.target.value);
     i18n.changeLanguage(lng.target.value);
   };
@@ -38,41 +37,46 @@ function Navbar() {
   return (
     <nav
       className={`${styles.paddingX} w-full border border-[#33353F] felx items-center py-5 fixed top-0 z-20 
-      bg-slate-600 dark:bg-[#121212] bg-opacity-100 transition-colors duration-300`}
+      bg-background-light dark:bg-background-dark bg-opacity-100 transition-colors duration-300`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto ">
         <Link
           to={"/"}
           className="flex items-center gap-2"
           onClick={() => {
-            // setActive("");
             window.scroll(0, 0);
           }}
         >
-          <HomeIcon className="h-10 w-10" />
+          <HomeIcon className="h-10 w-10 text-icon-bg-light dark:text-icon-bg-dark" />
         </Link>
-        <div className="sm:flex flex-row items-center gap-4">
+        <div className="flex flex-row items-center gap-4">
           <div className="md:w-auto">
             <select
               name="lngSelect"
               id="lngSelect"
               value={selectedLanguage}
               onChange={handleChangeLanguage}
-              className="w-full bg-transparent placeholder:text-slate-300 text-slate-500 text-sm border border-slate-400 rounded pl-3 pr-8 py-2 transition duration-300 ease focus:outline-none focus:border-slate-200 hover:border-slate-200 shadow-sm focus:shadow-md appearance-none cursor-pointer"
+              className="w-full bg-transparent placeholder:text-slate-300 text-text-title-light dark:text-text-title-dark text-sm border border-slate-400 
+              rounded pl-3 pr-8 py-2 transition duration-300 ease focus:outline-none focus:border-slate-200 hover:border-slate-200 shadow-sm focus:shadow-md appearance-none cursor-pointer"
             >
-              <option value="en">En</option>
-              <option value="es">Es</option>
+              <option className="text-slate-500" value="en">
+                En
+              </option>
+              <option className="text-slate-500" value="es">
+                Es
+              </option>
             </select>
           </div>
           <div className="md:w-auto">
             <button
-              className="rounded-full border-2 bg-slate-600 dark:bg-[#121212] border-slate-200 p-2 hover:bg-slate-500 transition-all"
+              className="rounded-full border-2 bg-transparent border-icon-bg-light dark:border-bgIcon-dark p-2 
+              hover:bg-icon-hover-light dark:hover:bg-icon-hover-dark transition-all"
               onClick={toggleDarkMode}
             >
               {isDarkMode ? (
                 <MoonIcon className="h-6 w-6" />
               ) : (
-                <SunIcon className="h-6 w-6" />
+                <SunIcon className="h-6 w-6 text-icon-bg-light dark:text-icon-bg-dark" />
               )}
             </button>
           </div>
@@ -85,23 +89,23 @@ function Navbar() {
               ))}
             </ul>
           </div>
-        </div>
-        <div className="mobile-menu block md:hidden">
-          {!navbarOpen ? (
-            <button
-              onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 y-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
-            >
-              <Bars3Icon className="h-5 w-5" />
-            </button>
-          ) : (
-            <button
-              onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 y-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
-            >
-              <XMarkIcon className="h-5 w-5" />
-            </button>
-          )}
+          <div className="mobile-menu block md:hidden">
+            {!navbarOpen ? (
+              <button
+                onClick={() => setNavbarOpen(true)}
+                className="flex items-center px-3 y-2 border rounded bg-slate-600 dark:bg-[#121212] border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              >
+                <Bars3Icon className="h-5 w-5" />
+              </button>
+            ) : (
+              <button
+                onClick={() => setNavbarOpen(false)}
+                className="flex items-center px-3 y-2 border rounded bg-slate-600 dark:bg-[#121212] border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              >
+                <XMarkIcon className="h-5 w-5" />
+              </button>
+            )}
+          </div>
         </div>
       </div>
       {navbarOpen ? <MenuOverlay link={navLinks} /> : null}

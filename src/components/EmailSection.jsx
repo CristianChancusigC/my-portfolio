@@ -69,13 +69,21 @@ function EmailSection() {
         </p>
         <div className="social flex flex-row gap-2">
           <Link to="https://github.com/CristianChancusigC" target="_blank">
-            <img src={gitIcon} alt="GitHub Icon" />
+            <img
+              src={gitIcon}
+              alt="GitHub Icon"
+              className="bg-icon-bg-light dark:bg-transparent rounded-xl"
+            />
           </Link>
           <Link
             to="https://www.linkedin.com/in/cristian-chancusig-153520247/"
             target="_blank"
           >
-            <img src={linkedInIcon} alt="LinkInd Icon" />
+            <img
+              src={linkedInIcon}
+              alt="LinkInd Icon"
+              className="bg-icon-bg-light dark:bg-transparent rounded-xl"
+            />
           </Link>
         </div>
       </div>

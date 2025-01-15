@@ -13,7 +13,7 @@ const App = () => {
   return (
     <ThemeProvider>
       <BrowserRouter>
-        <div className="relative z- bg-slate-300 dark:bg-[#121212] transition-colors duration-300">
+        <div className="relative z-10 bg-background-light dark:bg-background-dark transition-colors duration-300">
           <div className="bg-cover bg-no-repeat bg-center">
             <Navbar />
           </div>

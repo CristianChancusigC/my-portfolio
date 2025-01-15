@@ -7,7 +7,7 @@ function AboutSection() {
   const { t } = useTranslation("global");
 
   return (
-    <section className="text-slate-700 dark:text-white">
+    <section className="text-text-description-light dark:text-text-description-dark">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <img src={MainIcon} alt="About" className="rounded-lg" />
         <motion.div
@@ -16,7 +16,7 @@ function AboutSection() {
           transition={{ duration: 1 }}
         >
           <motion.h2
-            className="text-4xl font-bold text-slate-700 dark:text-white mb-4"
+            className="text-4xl font-bold text-text-title-light dark:text-text-title-dark mb-4"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
