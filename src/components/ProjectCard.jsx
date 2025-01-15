@@ -18,7 +18,7 @@ function ProjectCard({ imgUrl, title, description, gitUrl, liveUrl }) {
       >
         <div
           className="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-card-bg-light dark:bg-card-bg-dark 
-        bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500"
+        bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 rounded-t-xl"
         >
           {gitUrl && (
             <Link

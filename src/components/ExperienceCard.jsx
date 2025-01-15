@@ -26,7 +26,7 @@ const ExperienceCard = ({ experience }) => {
       // }
     >
       <div>
-        <h3 className="text-card-titleTxt-light dark:text-card-titleTxt-dark text-[24px] font-bold">
+        <h3 className="text-card-titleTxt-dark text-[24px] font-bold">
           {t(experience.title)}
         </h3>
         <p className="text-[16px] font-semibold" style={{ margin: 0 }}>
@@ -37,7 +37,7 @@ const ExperienceCard = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experiece-point-${index}`}
-            className="text-card-descriptionTxt-light dark:text-card-descriptionTxt-dark text-[14px] pl-1 tracking-wider"
+            className="text-card-descriptionTxt-dark text-[14px] pl-1 tracking-wider"
           >
             {t(point)}
           </li>

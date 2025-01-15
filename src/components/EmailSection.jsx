@@ -61,10 +61,10 @@ function EmailSection() {
       className={`${styles.paddingX} grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4`}
     >
       <div>
-        <h5 className="text-xl font-bold text-slate-700 dark:text-white my-2">
+        <h5 className="text-xl font-bold text-text-title-light dark:text-text-title-dark my-2">
           {t("Contact.txt1")}
         </h5>
-        <p className="text-slate-700 dark:text-[#ADB7BE] mb-4 mas-w-md">
+        <p className="text-text-description-light dark:text-text-description-dark mb-4 mas-w-md">
           {t("Contact.txt2")}
         </p>
         <div className="social flex flex-row gap-2">
@@ -90,7 +90,7 @@ function EmailSection() {
       <div>
         <form ref={formRef} onSubmit={handleSubmit} className="flex flex-col">
           <div className="mb-6">
-            <label className="text-slate-700 block text-sm mb-2 font-medium dark:text-white">
+            <label className="block text-sm mb-2 font-medium text-text-title-light dark:text-text-title-dark">
               {t("Contact.formTxt.first")}
               <input
                 type="text"
@@ -105,7 +105,7 @@ function EmailSection() {
             </label>
           </div>
           <div className="mb-6">
-            <label className="text-slate-700 dark:text-white block text-sm mb-2 font-medium">
+            <label className="block text-sm mb-2 font-medium text-text-title-light dark:text-text-title-dark">
               {t("Contact.formTxt.second")}
               <input
                 type="email"
@@ -120,7 +120,7 @@ function EmailSection() {
             </label>
           </div>
           <div className="mb-6">
-            <label className="text-slate-700 dark:text-white block text-sm mb-2 font-medium">
+            <label className="block text-sm mb-2 font-medium text-text-title-light dark:text-text-title-dark">
               {t("Contact.formTxt.third")}
               <textarea
                 name="message"

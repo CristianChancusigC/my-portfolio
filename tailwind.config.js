@@ -56,12 +56,12 @@ export default {
           dark: "#2E2E2E",
         },
         titleTxt: {
-          light: "#fff",
-          dark: "#fff",
+          light: "#2C3E50",
+          dark: "#E0E0E0",
         },
         descriptionTxt: {
-          light: "#fff",
-          dark: "#fff",
+          light: "#34495E",
+          dark: "#B0BEC5",
         },
         hover: {
           light: "#E0E0E0",

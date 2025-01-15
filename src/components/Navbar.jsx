@@ -41,7 +41,7 @@ function Navbar() {
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto ">
         <Link
-          to={"/"}
+          // to={"/"}
           className="flex items-center gap-2"
           onClick={() => {
             window.scroll(0, 0);
