@@ -33,21 +33,21 @@ Check out the live version of the portfolio [here](https://cristianchancusigc.gi
 
 1. Clone the Repository:
 
-```properties
-   $ git clone https://github.com/cristianchancusigc/my-portfolio.git
-   $ cd my-portfolio
+```console
+   git clone https://github.com/cristianchancusigc/my-portfolio.git
+   cd my-portfolio
 ```
 
 2. Install Dependencies:
 
-```properties
-   $ npm install
+```console
+   npm install
 ```
 
 3. Run the Development Server:
 
 ```console
-$ npm run dev
+    npm run dev
 ```
 
 4. Open the local development link in your browser to view the project.
@@ -72,11 +72,11 @@ To use the contact form powered by EmailJS, you need to:
    _ Service ID
    _ Template ID \* Public API Key
    Create a `.env` file in the project root and set the following variables:
-   \`\`\`markdown
-   $ REACT_APP_EMAILJS_SERVICE_ID="your_service_id"
-   $ REACT_APP_EMAILJS_TEMPLATE_ID="your_template_id"
-   $ REACT_APP_EMAILJS_USER_ID="your_user_id"
-   \`\`\`
+   ```console
+   REACT_APP_EMAILJS_SERVICE_ID="your_service_id"
+   REACT_APP_EMAILJS_TEMPLATE_ID="your_template_id"
+   REACT_APP_EMAILJS_USER_ID="your_user_id"
+   ```
 
 ## 🤔 Challenges
 
@@ -86,7 +86,3 @@ As this was my first time building a web page with React, I faced several challe
 - Creating a dark/light mode toggle.
 - Adding a multi-language system.
 - Working with animations and making the site interactive.
-
-```
-
-```
