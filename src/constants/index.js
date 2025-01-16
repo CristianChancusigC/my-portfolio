@@ -77,7 +77,7 @@ const projectsData = [
     title: "Projects.prj1.title",
     description: "Projects.prj1.description",
     imgUrl: portfolioImg,
-    gitUrl: "",
+    gitUrl: "https://github.com/CristianChancusigC/my-portfolio/tree/main",
     liveUrl: "https://cristianchancusigc.github.io/my-portfolio/",
     tag: ["All", "Web"],
   },
@@ -90,26 +90,6 @@ const projectsData = [
     liveUrl: "",
     tag: ["All", "Mobile"],
   },
-  // {
-  //   id: 3,
-  //   title: "Signbreak",
-  //   description: "Juego para aprender matemáticas",
-  //   imgUrl: sgnImg,
-  //   gitUrl: "",
-  //   liveUrl:
-  //     "https://play.google.com/store/apps/details?id=com.ngxseemon.signbreak",
-  //   tag: ["All", "Mobile"],
-  // },
-  // {
-  //   id: 2,
-  //   title: "Operazone",
-  //   description: "Juego para aprender matemáticas",
-  //   imgUrl: oznImg,
-  //   gitUrl: "",
-  //   liveUrl:
-  //     "https://play.google.com/store/apps/details?id=com.ngxseemon.Operazone",
-  //   tag: ["All", "Mobile"],
-  // },
 ];
 
 const skilsTech = [
