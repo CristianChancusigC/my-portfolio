@@ -21,14 +21,23 @@ function EmailSection() {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
+
   const handleSubmit = (e) => {
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const userId = import.meta.env.VITE_EMAILJS_USER_ID;
+
+    // console.log(serviceId, templateId, userId);
+
     e.preventDefault();
     setLoading(true);
 
     emailjs
       .send(
-        "service_uwgjbep",
-        "template_rnai3tn",
+        serviceId,
+        templateId,
+        // "service_uwgjbep",
+        // "template_rnai3tn",
         {
           from_name: form.name,
           to_name: "Cristian",
@@ -36,7 +45,8 @@ function EmailSection() {
           to_email: "cristianchancusigc@gmail.com",
           message: form.message,
         },
-        "AoEPAcVu2W7F6XX__"
+        userId
+        // "AoEPAcVu2W7F6XX__"
       )
       .then(
         () => {
