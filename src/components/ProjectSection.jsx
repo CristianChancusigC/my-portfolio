@@ -61,6 +61,7 @@ function ProjectsSection() {
               imgUrl={project.imgUrl}
               gitUrl={project.gitUrl}
               liveUrl={project.liveUrl}
+              technologies={project.technologies}
             />
           </motion.div>
         ))}

@@ -10,7 +10,7 @@ const unityIcon = "./images/unity-icon.svg";
 const sgnImg = "./images/projects/signbreak.png";
 const oznImg = "./images/projects/operazone.png";
 const portfolioImg = "./images/projects/portfolio-img.png";
-const appCellImg = "./images/projects/appCell.png";
+const appCellImg = "./images/projects/appCell.webp";
 
 const navLinks = [
   {
@@ -74,21 +74,23 @@ const experiences = [
 const projectsData = [
   {
     id: 1,
-    title: "Projects.prj1.title",
-    description: "Projects.prj1.description",
-    imgUrl: portfolioImg,
-    gitUrl: "https://github.com/CristianChancusigC/my-portfolio/tree/main",
-    liveUrl: "https://cristianchancusigc.github.io/my-portfolio/",
-    tag: ["All", "Web"],
-  },
-  {
-    id: 2,
     title: "Projects.prj2.title",
     description: "Projects.prj2.description",
     imgUrl: appCellImg,
     gitUrl: "https://github.com/CristianChancusigC/Location.git",
     liveUrl: "",
+    technologies: ["Kotlin", "Jetpack Compose"],
     tag: ["All", "Mobile"],
+  },
+  {
+    id: 2,
+    title: "Projects.prj1.title",
+    description: "Projects.prj1.description",
+    imgUrl: portfolioImg,
+    gitUrl: "https://github.com/CristianChancusigC/my-portfolio/tree/main",
+    liveUrl: "https://cristianchancusigc.github.io/my-portfolio/",
+    technologies: ["React", "Tailwind CSS"],
+    tag: ["All", "Web"],
   },
 ];
 

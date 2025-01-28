@@ -10,13 +10,16 @@
       "p2": "Cristian!",
       "p3": "Developer"
     },
-    "intro": "Software developer with experience in mobile applications and educational games, specializing in Unity, C#, and Python. Certified Scrum Master (2023) with expertise in agile methodologies and team collaboration. Awarded 'Best Paper' at MEDES 2022 for contributions to computer vision and automation. Fluent in English (B2) and Spanish, seeking to grow as a backend or frontend programmer in dynamic, innovative projects.",
+    "intro": "Software developer with experience in challenging projects, from educational applications to adaptive interfaces. With 2 years in backend and frontend development, I am now focused on creating enterprise solutions that integrate data analytics and artificial intelligence. Passionate about learning and contributing to innovative projects.",
     "hire": "Hire me",
     "download": "Download CV"
   },
   "About": {
     "title": "About me",
-    "description": "I am a software developer with experience in mobile applications and educational games, focused on AI solutions to create innovative tools. I stand out commitment, willingness to learn and adapt to new challenges. With skills in programming, teamwork and agile methodologies such as Scrum, I strive to exceed expectations and contribute to the success of the projects in which I participate."
+   "description": "Since my university years, I discovered my passion for software development while studying electronics in automation. Although my background was in automated systems, programming captured my interest, leading me to complete a thesis combining software, automation and artificial intelligence.",
+    "description2": "My professional career started in the development of educational applications and games, where I gained experience in backend and frontend using Unity and C#. During that time, I learned how to manage data, implement responsive interfaces and collaborate with multidisciplinary teams, such as design and QA. I also worked with agile methodologies such as Scrum, adapting to constant changes and keeping the focus on delivering quality products.",
+    "description3": "Today, I'm looking to expand my skills into the enterprise realm, studying technologies such as Python, JavaScript, TypeScript and React. My goal is to develop innovative solutions that combine artificial intelligence and exceptional user experience.",
+    "description4": "Outside of work, I enjoy researching technology, exercising and exploring different cultures, activities that inspire me to grow both professionally and personally."
   },
   "Experience": {
     "title": "Experience",
@@ -66,7 +69,7 @@
     "btn3": "Mobile",
     "prj1": {
       "title": "Portfolio",
-      "description": "This is my portfolio",
+      "description": "Website created with React, Tailwind and JS to showcase my skills as a developer. It includes responsive design, modern animations, language system and light/dark modes. This project allowed me to learn path and state management in React, as well as resource optimisation.",
       "tag": {
         "tag1": "All",
         "tag2": "Web"
@@ -74,7 +77,7 @@
     },
     "prj2": {
       "title": "Obtaining data",
-      "description": "App to obtain signal information",
+      "description": "Mobile application in Kotlin to collect 4G and 5G antenna data from Android devices, with the goal of improving signal quality. I learned how to read antenna data and use Jetpack Compose. The project was approved by the client.",
       "tag": {
         "tag1": "All",
         "tag2": "Web"

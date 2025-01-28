@@ -3,7 +3,7 @@ import { SectionWrapper } from "../hoc";
 import { useTranslation } from "react-i18next";
 
 function AboutSection() {
-  const MainIcon = "./images/about-img.jpg";
+  const MainIcon = "./images/about-img.webp";
   const { t } = useTranslation("global");
 
   return (
@@ -27,8 +27,33 @@ function AboutSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
+            className="mb-4"
           >
             {t("About.description")}
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            className="mb-4"
+          >
+            {t("About.description2")}
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            className="mb-4"
+          >
+            {t("About.description3")}
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4 }}
+            className="mb-4"
+          >
+            {t("About.description4")}
           </motion.p>
         </motion.div>
       </div>

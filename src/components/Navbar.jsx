@@ -27,6 +27,17 @@ function Navbar() {
   };
 
   useEffect(() => {
+    const userLanguage = navigator.language || navigator.languages[0];
+    if (userLanguage.startsWith("es")) {
+      setSelectedLanguage("es");
+      i18n.changeLanguage("es");
+    } else {
+      setSelectedLanguage("en");
+      i18n.changeLanguage("en");
+    }
+  }, []);
+
+  useEffect(() => {
     if (isDarkMode) {
       document.querySelector("html").classList.add("dark");
     } else {

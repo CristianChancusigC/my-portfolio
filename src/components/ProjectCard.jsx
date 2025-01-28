@@ -2,7 +2,14 @@ import { CodeBracketIcon, GlobeAltIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router";
 import { motion } from "motion/react";
 
-function ProjectCard({ imgUrl, title, description, gitUrl, liveUrl }) {
+function ProjectCard({
+  imgUrl,
+  title,
+  description,
+  gitUrl,
+  liveUrl,
+  technologies,
+}) {
   return (
     <motion.div
       whileHover={{ scale: [null, 1.05, 1.05] }}
@@ -43,6 +50,13 @@ function ProjectCard({ imgUrl, title, description, gitUrl, liveUrl }) {
       <div className="text-white rounded-b-xl mt-2 bg-card-bg-light dark:bg-card-bg-dark py-6 px-4">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
+        <div className="mt-8 flex flex-row gap-3">
+          {technologies.map((tech, i) => (
+            <div key={i} className="border-b">
+              {tech}
+            </div>
+          ))}
+        </div>
       </div>
     </motion.div>
   );
