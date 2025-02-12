@@ -63,24 +63,24 @@
     "title": "Skills"
   },
   "Projects": {
-    "title": "My Projects",
+    "title": "Projects",
     "btn1": "All",
     "btn2": "Web",
     "btn3": "Mobile",
     "prj1": {
-      "title": "Portfolio",
-      "description": "Website created with React, Tailwind and JS to showcase my skills as a developer. It includes responsive design, modern animations, language system and light/dark modes. This project allowed me to learn path and state management in React, as well as resource optimisation.",
+      "title": "Intelligent Object Classifier",
+      "description": "I created an automatic sorting system using Django, Bootstrap, Azure and Firebase. Photos of objects were sent to train a model on a Raspberry Pi, which then automatically sorted on a conveyor belt. It allowed me to integrate AI with hardware efficiently.",
       "tag": {
         "tag1": "All",
         "tag2": "Web"
       }
     },
     "prj2": {
-      "title": "Obtaining data",
-      "description": "Mobile application in Kotlin to collect 4G and 5G antenna data from Android devices, with the goal of improving signal quality. I learned how to read antenna data and use Jetpack Compose. The project was approved by the client.",
+      "title": "Educational Games",
+      "description": "I collaborated in the development of educational games focused on helping children learn mathematics in a fun way. These games combined interactivity and playful design to enhance the learning experience.",
       "tag": {
         "tag1": "All",
-        "tag2": "Web"
+        "tag2": "Mobile"
       }
     },
     "prj3": {
@@ -89,6 +89,14 @@
       "tag": {
         "tag1": "All",
         "tag2": "Web"
+      }
+    },
+    "prj4": {
+      "title": "Obtaining data",
+      "description": "Mobile application in Kotlin to collect 4G and 5G antenna data from Android devices, with the goal of improving signal quality. I learned how to read antenna data and use Jetpack Compose. The project was approved by the client.",
+      "tag": {
+        "tag1": "All",
+        "tag2": "Mobile"
       }
     }
   },

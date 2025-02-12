@@ -1,5 +1,4 @@
 const gitIcon = "./images/github-icon-2.svg";
-const MainIcon = "./images/hero-image.jpg";
 const pythonIcon = "./images/python-icon.svg";
 const jsIcon = "./images/javascript-icon.svg";
 const reactIcon = "./images/react-icon.svg";
@@ -7,8 +6,8 @@ const cSharpIcon = "./images/c-sharp-icon.svg";
 const unityIcon = "./images/unity-icon.svg";
 
 // Img Projects
-const sgnImg = "./images/projects/signbreak.png";
-const oznImg = "./images/projects/operazone.png";
+const workImg = "./images/projects/work.webp";
+const classifierImg = "./images/projects/classifier.webp";
 const portfolioImg = "./images/projects/portfolio-img.png";
 const appCellImg = "./images/projects/appCell.webp";
 const searchFilmImg = "./images/projects/project3.webp";
@@ -75,23 +74,23 @@ const experiences = [
 const projectsData = [
   {
     id: 1,
-    title: "Projects.prj2.title",
-    description: "Projects.prj2.description",
-    imgUrl: appCellImg,
-    gitUrl: "https://github.com/CristianChancusigC/Location.git",
-    liveUrl: "",
-    technologies: ["Kotlin", "Jetpack Compose"],
-    tag: ["All", "Mobile"],
+    title: "Projects.prj1.title",
+    description: "Projects.prj1.description",
+    imgUrl: classifierImg,
+    gitUrl: "https://medes.sigappfr.org/22/best-papers/",
+    liveUrl: "https://dl.acm.org/doi/10.1145/3508397.3564828",
+    technologies: ["Python", "Django", "Azure Computer Vison", "Firebase"],
+    tag: ["All", "Web"],
   },
   {
     id: 2,
-    title: "Projects.prj1.title",
-    description: "Projects.prj1.description",
-    imgUrl: portfolioImg,
-    gitUrl: "https://github.com/CristianChancusigC/my-portfolio/tree/main",
-    liveUrl: "https://cristianchancusigc.github.io/my-portfolio/",
-    technologies: ["React", "Tailwind CSS"],
-    tag: ["All", "Web"],
+    title: "Projects.prj2.title",
+    description: "Projects.prj2.description",
+    imgUrl: workImg,
+    gitUrl: "",
+    liveUrl: "https://play.google.com/store/apps/developer?id=NgxSeemon&hl=en",
+    technologies: ["C#", "Unity", "PlayFab", "Firebase"],
+    tag: ["All", "Mobile"],
   },
   {
     id: 3,
@@ -102,6 +101,16 @@ const projectsData = [
     liveUrl: "https://cristianchancusigc.github.io/film-search/",
     technologies: ["React", "Tailwind CSS"],
     tag: ["All", "Web"],
+  },
+  {
+    id: 4,
+    title: "Projects.prj4.title",
+    description: "Projects.prj4.description",
+    imgUrl: appCellImg,
+    gitUrl: "https://github.com/CristianChancusigC/Location.git",
+    liveUrl: "",
+    technologies: ["Kotlin", "Jetpack Compose"],
+    tag: ["All", "Mobile"],
   },
 ];
 

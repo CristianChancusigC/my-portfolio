@@ -63,24 +63,24 @@
     "title": "Habilidades"
   },
   "Projects": {
-    "title": "Mis proyectos",
+    "title": "Proyectos",
     "btn1": "Todos",
     "btn2": "Web",
     "btn3": "Móvil",
     "prj1": {
-      "title": "Portfolio",
-      "description": "Sitio web creado con React, Tailwind y JS para mostrar mis habilidades como desarrollador. Incluye diseño responsive, animaciones modernas, sistema de idiomas y modos claro/oscuro. Este proyecto me permitió aprender manejo de rutas y estados en React, además de optimización de recursos.",
+      "title": "Clasificador Inteligente de Objetos",
+      "description": "Creé un sistema de clasificación automática con Django, Bootstrap, Azure y Firebase. Las fotos de los objetos se enviaban para entrenar un modelo en una Raspberry Pi, que luego clasificaba automáticamente en una banda transportadora. Me permitió integrar IA con hardware de manera eficiente.",
       "tag": {
         "tag1": "All",
         "tag2": "Web"
       }
     },
     "prj2": {
-      "title": "Obtención de datos",
-      "description": "Aplicación móvil en Kotlin para recolectar datos de antenas 4G y 5G desde dispositivos Android, con el objetivo de mejorar la calidad de la señal. Aprendí a leer datos de antenas y usar Jetpack Compose. El proyecto fue aprobado por el cliente.",
+      "title": "Juegos Educativos",
+      "description": "Colaboré en el desarrollo de juegos educativos enfocados en ayudar a niños a aprender matemáticas de manera divertida. Estos juegos combinaban interactividad y diseño lúdico para mejorar la experiencia de aprendizaje.",
       "tag": {
         "tag1": "All",
-        "tag2": "Web"
+        "tag2": "Mobile"
       }
     },
     "prj3": {
@@ -89,6 +89,14 @@
       "tag": {
         "tag1": "All",
         "tag2": "Web"
+      }
+    },
+    "prj4": {
+      "title": "Obtención de datos",
+      "description": "Aplicación móvil en Kotlin para recolectar datos de antenas 4G y 5G desde dispositivos Android, con el objetivo de mejorar la calidad de la señal. Aprendí a leer datos de antenas y usar Jetpack Compose. El proyecto fue aprobado por el cliente.",
+      "tag": {
+        "tag1": "All",
+        "tag2": "Mobile"
       }
     }
   },

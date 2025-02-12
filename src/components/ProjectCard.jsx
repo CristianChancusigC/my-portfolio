@@ -50,10 +50,13 @@ function ProjectCard({
       <div className="text-white rounded-b-xl mt-2 bg-card-bg-light dark:bg-card-bg-dark py-6 px-4">
         <h5 className="text-xl font-semibold mb-2">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
-        <div className="mt-8 flex flex-row gap-3">
+        <div className="mt-8 flex flex-wrap gap-3">
           {technologies.map((tech, i) => (
-            <div key={i} className="border-b">
-              {tech}
+            <div
+              key={i}
+              className="border rounded-full items-center p-2 border-slate-400"
+            >
+              <p className="text-sm text-slate-300">{tech}</p>
             </div>
           ))}
         </div>
