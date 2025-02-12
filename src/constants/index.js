@@ -11,6 +11,7 @@ const sgnImg = "./images/projects/signbreak.png";
 const oznImg = "./images/projects/operazone.png";
 const portfolioImg = "./images/projects/portfolio-img.png";
 const appCellImg = "./images/projects/appCell.webp";
+const searchFilmImg = "./images/projects/project3.webp";
 
 const navLinks = [
   {
@@ -89,6 +90,16 @@ const projectsData = [
     imgUrl: portfolioImg,
     gitUrl: "https://github.com/CristianChancusigC/my-portfolio/tree/main",
     liveUrl: "https://cristianchancusigc.github.io/my-portfolio/",
+    technologies: ["React", "Tailwind CSS"],
+    tag: ["All", "Web"],
+  },
+  {
+    id: 3,
+    title: "Projects.prj3.title",
+    description: "Projects.prj3.description",
+    imgUrl: searchFilmImg,
+    gitUrl: "https://github.com/CristianChancusigC/film-search",
+    liveUrl: "https://cristianchancusigc.github.io/film-search/",
     technologies: ["React", "Tailwind CSS"],
     tag: ["All", "Web"],
   },

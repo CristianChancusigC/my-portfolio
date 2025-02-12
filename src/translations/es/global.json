@@ -82,6 +82,14 @@
         "tag1": "All",
         "tag2": "Web"
       }
+    },
+    "prj3": {
+      "title": "Buscador de películas",
+      "description": "Este proyecto es un buscador de películas desarrollado para mejorar mis habilidades en el consumo de APIs con React. Siguiendo un tutorial, personalicé la barra de búsqueda e implementé mejoras. La aplicación permite a los usuarios buscar películas y ver los resultados en tiempo real, proporcionando una experiencia fluida.",
+      "tag": {
+        "tag1": "All",
+        "tag2": "Web"
+      }
     }
   },
   "Contact": {
